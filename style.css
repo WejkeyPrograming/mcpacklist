@@ -1,0 +1,23 @@
+body {
+    background: #cfcfcf;
+    background: url("https://upload.hicoria.com/files/zwd7kMk1.png");
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 2.6;
+    margin: 0;
+    padding: 0;
+}
+.rpnet-posts {
+    background: #c9c5c5;
+    position: relative;
+    margin: 0 0 30px 0 !important;
+    word-break: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#rpnet-content-wrapper {
+    position: relative;
+    padding: 0 0 0;
+    word-wrap: break-word;
+    background: #747474;
+}
