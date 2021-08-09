@@ -1,23 +1,203 @@
-body {
-    background: #cfcfcf;
-    background: url("https://upload.hicoria.com/files/zwd7kMk1.png");
-    font-family: 'Roboto',sans-serif;
-    font-size: 14px;
-    line-height: 2.6;
+body{
+  background-image: url("https://upload.hicoria.com/files/Bn7RnPPT.jpg");
+}
+
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Georama', sans-serif;
 }
-.rpnet-posts {
-    background: #c9c5c5;
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,31,0.6),rgba(4,9,31,0.6)),url("https://upload.hicoria.com/files/a9qjrpwB.jpg");
+    background-position: center;
+    background-size: cover;
     position: relative;
-    margin: 0 0 30px 0 !important;
-    word-break: normal;
-    word-wrap: break-word;
-    overflow: hidden;
 }
-#rpnet-content-wrapper {
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 160px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
     position: relative;
-    padding: 0 0 0;
-    word-wrap: break-word;
-    background: #747474;
+}
+.nav-links ul li a{
+    color: fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44a32;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 58px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #cecdcd;
+    background: rgb(128, 128, 128);
+    transition: 1.5s;
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url("https://upload.hicoria.com/files/Bn7RnPPT.jpg");
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    color: rgb(99, 98, 98);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+
+.col-text {
+    height:20em;
+  }
+  .grid-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-direction: row; 
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+  }
+  .col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:-1;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+  .col-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    width: 60%;
+  }
+  .col-image {
+    background-size: cover;
+    background-position:center center;
+  }
+  
+  @media (max-width: 640px) {
+    .grid-flex {
+      height: 40em;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; 
+     }
+    .col {
+      order:vertical;
+    }
+    .col-left {
+      -webkit-box-ordinal-group:0;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+    .col-text div p {
+      padding: 1em;
+    }
+    .Aligner-item {
+      width: 90%;
+    }
+  }
+  
+  
+.title2{
+    margin-top: -100px;
+    margin-left: -50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 54px;
+    color: rgb(105, 202, 226);
+}
+.title2:hover{
+  color: #4af144;
+}
+.subtitle2{
+    font-family: 'STIX Two Text', serif;
+    font-size: 25px;
+    margin-left: -50px;
+    color: rgb(207, 255, 152);
+}
+.subtitle1{
+  font-family: 'STIX Two Text', serif;
+  font-size: 15px;
+  margin-left: -50px;
+  color: #535353;
+  margin-top: -20px;
+}
+.jeden{
+  color: rgb(218, 121, 121);
+  margin-top: -60px;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
 }
